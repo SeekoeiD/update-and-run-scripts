@@ -4,7 +4,10 @@ This script it used to startup a Node server and check for updates every 5 minut
 
 # Getting started
 
-- If its a private repo, setup SSH keys for access to it
+- If its a private repo: 
+  - Create SSH key on server: `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+  - Copy `~/.ssh/id_rsa.pub` content to GitHub private repo -> Settings -> Deploy Keys
+  
 - From `/home` run the following to clone your source repo to `/home/node-source`:
 
 ```bash
