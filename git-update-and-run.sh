@@ -23,8 +23,8 @@ do
     
     # Stop the node.js server
     pkill node
-    # Update the local branch with the remote branch, forcing the update
     
+    # Update the local branch with the remote branch, forcing the update    
     git stash
     git stash drop
     git reset --hard origin/main
