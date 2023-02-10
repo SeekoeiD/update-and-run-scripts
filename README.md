@@ -4,7 +4,7 @@ This script it used to startup a Node server and check for updates every 5 minut
 
 # Getting started
 
-- Setup SSH keys for access to your Github repo
+- If its a private repo, setup SSH keys for access to it
 - From `/home` run the following to clone your source repo to `/home/node-source`:
 
 ```bash
