@@ -2,6 +2,7 @@
 
 cd /home/node-source
 
+# Install packages and start server
 npm ci
 node index.js &> node.log &
 
