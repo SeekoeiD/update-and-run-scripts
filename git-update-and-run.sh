@@ -30,6 +30,7 @@ do
     git reset --hard origin/main
     
     # Start the node.js server again
+    npm ci
     node index.js &> node.log &
   fi
 
