@@ -11,25 +11,25 @@ This script it used to startup a Node server and check for updates every 5 minut
 - From `/home` run the following to clone your source repo to `/home/node-source`:
 
 ```bash
-git clone git@github.com:silversixpence-crypto/node-source.git
+git clone git@github.com:SeekoeiD/node-source.git
 ```
 
-- Download `git-update-and-run.sh` to `/home`
+- Download `update-and-run-node.sh` to `/home`
 
 ```
-wget https://github.com/silversixpence-crypto/git-update-and-run-script/raw/main/git-update-and-run.sh
+wget https://github.com/SeekoeiD/git-update-and-run-script/raw/main/update-and-run-node.sh
 ```
 
 - Make it executable
 
 ```
-chmod +x git-update-and-run.sh
+chmod +x update-and-run-node.sh
 ```
 
 - Run it
 
 ```
-./git-update-and-run.sh
+./update-and-run-node.sh
 ```
 
 # Additional
@@ -37,5 +37,5 @@ chmod +x git-update-and-run.sh
 Automatically start this script with crontab and run it inside `screen` to keep it running without a terminal open.
 
 ```
-@reboot screen -dmS node /home/git-update-and-run.sh
+@reboot screen -dmS node /home/update-and-run-node.sh
 ```
