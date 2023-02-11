@@ -8,6 +8,12 @@ fi
 # Change to the repo directory
 cd my-java-project
 
+# Fetch the latest changes from all branches
+git fetch --all
+
+# Checkout the main branch
+git checkout origin/main
+
 # Build the project
 ./gradlew build
 
@@ -33,12 +39,12 @@ while true; do
     # Wait for app to terminate
     while screen -list | grep -q "my-java-app"; do
       sleep 1
-    done
+    done    
     
+    git checkout origin/main
     git pull
-    ./gradlew build
     
-    # Start app
+    ./gradlew build
     screen -dmS my-java-app java -jar build/libs/my-java-project.jar
   fi
   sleep 10m
