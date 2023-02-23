@@ -23,8 +23,8 @@ cd electrumx
 python3 setup.py build
 python3 setup.py install
 
-cd /home
 mkdir /home/db
 
+cd /home
 wget https://github.com/SeekoeiD/update-and-run-scripts/raw/main/electrumx-run.sh
 chmod +x run.sh
