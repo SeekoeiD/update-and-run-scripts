@@ -28,3 +28,5 @@ mkdir /home/db
 cd /home
 wget https://github.com/SeekoeiD/update-and-run-scripts/raw/main/electrumx-run.sh
 chmod +x run.sh
+
+(crontab -u $(whoami) -l; echo "@reboot screen -dmS electrumx /home/run.sh" ) | crontab -u $(whoami) -
