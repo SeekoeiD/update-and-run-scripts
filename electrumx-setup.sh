@@ -1,5 +1,4 @@
 #!/bin/sh
-
 cd /home
 
 apt update && apt autoremove -y && apt upgrade -y && apt dist-upgrade -y
