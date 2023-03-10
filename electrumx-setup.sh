@@ -28,4 +28,8 @@ cd /home
 wget https://github.com/SeekoeiD/update-and-run-scripts/raw/main/electrumx-run.sh
 chmod +x electrumx-run.sh
 
-#(crontab -u $(whoami) -l; echo "@reboot screen -dmS electrumx /home/electrumx-run.sh" ) | crontab -u $(whoami) -
+#crontab -e
+#@reboot screen -dmS electrumx /home/electrumx-run.sh
+
+#for Dash
+#https://github.com/SeekoeiD/python-x11_hash
